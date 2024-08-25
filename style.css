@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(255,250,239) !important;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    background-color: rgb(38,53,92);
+    border-radius: 10px 0 0 10px;
+    color: white;
+    min-width: 150px;
+    height: 500px;
+    padding: 20px !important;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    gap: 40px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0 20px 0 0;
+}
+
+.navbar ul li {
+    padding: 15px 0 0 0;
+}
+
+.navbar ul li a {
+    color: #d1d6e0;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.card {
+    height: 500px !important;
+    min-width: 700px !important;
+    border-radius: 0 10px 10px 0 !important;
+    background: url(./img/brainbg.jpg);
+    background-size: cover;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
