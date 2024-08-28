@@ -37,11 +37,11 @@ body {
     font-size: 18px;
 }
 
-.navbarlink {
+.navbar-link {
     transition-duration: 0.4s;
 }
 
-.navbarlink:hover {
+.navbar-link:hover {
     font-weight: 600;
     font-size: larger;
 }
@@ -52,7 +52,7 @@ body {
     border-radius: 0 10px 10px 0 !important;
     background: url(./img/brainbg.jpg);
     background-size: cover;
-    padding: 40px;
+    padding: 40px 100px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -61,6 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 !important;
 }
 
 .button {
@@ -71,10 +72,13 @@ body {
     border: 0;
     border-radius: 8px;
     padding: 5px 30px;
+    transition-duration: 0.4s;
+}
+
+.start-btn {
     position: absolute;
     bottom: 40px;
-    right: 40px;
-    transition-duration: 0.4s;
+    right: 100px;
 }
 
 .button:hover {
@@ -85,8 +89,8 @@ body {
     height: 50px;
     background-color: rgb(255, 255, 255);
     display: flex;
+    width: 100%;
     align-items: center;
-    width: 500px;
     border-radius: 8px;
     gap: 70px;
     padding: 5px;
@@ -111,4 +115,9 @@ body {
 
 p {
     margin: 0 !important;
+}
+
+.question-footer {
+    display: flex;
+    justify-content: space-between;
 }
