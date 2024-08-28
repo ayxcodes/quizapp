@@ -31,15 +31,19 @@ body {
     padding: 15px 0 0 0;
 }
 
-a:hover {
-    background-color: rgba(38,53,92, 0.5);
-    cursor: pointer;
-}
-
 .navbar ul li a {
     color: #d1d6e0;
     text-decoration: none;
     font-size: 18px;
+}
+
+.navbarlink {
+    transition-duration: 0.4s;
+}
+
+.navbarlink:hover {
+    font-weight: 600;
+    font-size: larger;
 }
 
 .card {
@@ -63,6 +67,7 @@ a:hover {
     background-color: rgb(255,128,0) !important;
     width: fit-content;
     color: white;
+    text-decoration: none;
     border: 0;
     border-radius: 8px;
     padding: 5px 30px;
@@ -73,7 +78,7 @@ a:hover {
 }
 
 .button:hover {
-    background-color: rgb(255, 176, 97);
+    background-color: rgb(255, 176, 97) !important;
 }
 
 .card-answer {
@@ -85,6 +90,12 @@ a:hover {
     border-radius: 8px;
     gap: 70px;
     padding: 5px;
+    transition-duration: 0.4s;
+}
+
+.card-answer:hover {
+    cursor: pointer;
+    background-color: rgb(231, 231, 231);
 }
 
 .answer {

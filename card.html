@@ -13,41 +13,39 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="init()">
     <div class="container">
         <nav class="navbar">
             <img src="/img/logo.png" width="80px">
                 <ul>
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JS</a></li>
-                    <li><a href="#">Java</a></li>
+                    <li><a class="navbarlink" href="index.html">HTML</a></li>
+                    <li><a class="navbarlink" href="#">CSS</a></li>
+                    <li><a class="navbarlink" href="#">JS</a></li>
+                    <li><a class="navbarlink" href="#">Java</a></li>
                 </ul>
         </nav>
     
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h1 class="card-title mb-5">Wer hat HTML erfunden?</h1>
-
+                <h1 id="questiontext" class="card-title mb-5"></h1>
                 <div class="card-answer mb-2">
                     <p class="answer"><b>A</b></p>
-                    <p>Robbie Williams</p>
-
+                    <p id="answer_1"></p>
                 </div>
 
                 <div class="card-answer mb-2">
                     <p class="answer"><b>B</b></p>
-                    <p>Lady Gaga</p>
+                    <p id="answer_2"></p>
                 </div>
 
                 <div class="card-answer mb-2">
                     <p class="answer"><b>C</b></p>
-                    <p>Tim Berners-Lee</p>
+                    <p id="answer_3"></p>
                 </div>
 
                 <div class="card-answer mb-2">
                     <p class="answer"><b>D</b></p>
-                    <p>Justin Bieber</p>
+                    <p id="answer_4"></p>
                 </div>
             </div>
         </div>
