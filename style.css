@@ -19,6 +19,7 @@ body {
     flex-direction: column;
     justify-content: flex-start !important;
     gap: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul {
@@ -28,6 +29,11 @@ body {
 
 .navbar ul li {
     padding: 15px 0 0 0;
+}
+
+a:hover {
+    background-color: rgba(38,53,92, 0.5);
+    cursor: pointer;
 }
 
 .navbar ul li a {
@@ -45,4 +51,53 @@ body {
     padding: 40px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    background-color: rgb(255,128,0) !important;
+    width: fit-content;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    padding: 5px 30px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: rgb(255, 176, 97);
+}
+
+.card-answer {
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    width: 500px;
+    border-radius: 8px;
+    gap: 70px;
+    padding: 5px;
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 204, 204);
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    margin: 0;
+}
+
+p {
+    margin: 0 !important;
 }
